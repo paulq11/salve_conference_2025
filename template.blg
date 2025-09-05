@@ -1,0 +1,8 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'template.blg'
+[78] biber:340> INFO - === Fri Aug  1, 2025, 21:59:20
+[92] Biber.pm:418> INFO - Reading 'template.bcf'
+[158] Utils.pm:398> ERROR - Error: Found biblatex control file version 3.11, expected version 3.8.
+This means that your biber (2.17) and biblatex (3.21) versions are incompatible.
+See compat matrix in biblatex or biber PDF documentation.
+[158] Biber.pm:135> INFO - ERRORS: 1

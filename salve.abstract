@@ -1,0 +1,15 @@
+Technological advances tend to appear as something magical when they are first introduced. 
+An aspect of all technology that may not be considered in any depth, is how systems respond to 
+error conditions. Often, the very essence of the technological solution is in how errors are 
+handled. 
+In this paper, several areas of technology are covered. Each one has different uses and applications. 
+In each example, error handling is either a fundamental limit to the performance of the system, or it 
+is a controlled parameter that is central to the behavior of the system. With the recent advent of 
+artificial intelligence systems, we have to consider a few new aspects of how systems handle errors. 
+AI systems have the ability to at least appear to have a point of view. They have been used to 
+purposefully create products and responses that are objectively false or misleading. They also, due the
+nature of a training/classification model, can be trained using data that is incorrect, or has a 
+bias of some kind. We discuss the data security concepts of Confidentiality, Integrity, and 
+Accessability, and add a potential concept of Data Validity. This idea can lead to a discussion
+of how metrics might arise which enable the classification of data as being valid or not.
+	

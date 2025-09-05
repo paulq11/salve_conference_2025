@@ -1,0 +1,117 @@
+Outline for the paper for the Salve Humanities and Technology conference in October 2025. 
+
+Theme of conference: Dues Ex Machina: Technology as Salvation or Damnation
+
+my point of view:
+	throughout the past 50 years, technology has often appeared as magic. 
+	examples include 
+		- the advent of computers as computational and business tools
+		  in the 50s, IBM introduced the first mass produced computer. The 701. 
+		- storage devices - 3380
+		- atm machine ? using technology to change something in society
+		- gps - statelite positioning.
+		- cell phones
+		- ai/ml.. a new issue/ these things can have opinions, points of view. 
+			- example of an issue: grok, suddenly goes nazi.
+
+	what do we do about it? 
+		security has always been about CIA, confidentiality, Itegrity, Availability		  
+
+
+Title: Technology as Magic, and a story of errors. 
+
+Presentation flow:
+
+slide 1 - computing in 1975
+followed by a teletype image.
+
+when I was in high school - a long time ago. I took a computer science class. 
+This was an intro class, using a remote machine - a DEC pdp 11, running RSTS/E. 
+We connected with an asr33 teletype, through an acoustic coupler into a phone receiver.
+There was a magic about typing into a very cumbersome, and loud machine and having it 
+type something back. After all, I am intelligent and I can type... so it might be true that 
+the other end of the conversation is also intelligent. Furthermore, we could enter 
+instructions in a specific language and this remote intelligence would do something, and respond. 
+This looked to me like magic.
+In the stream of data, it was very common to be interrupted by noise, or bad characters... errors. 
+Later in my high school pursuit, I built a small microcomputer with a soldering iron, from a SWTPC kit. 
+This was an exercise in learning a great many things. Still magic, still lots of errors. 
+
+slide 3 - single picture of 3380
+
+My first real job with with IBM, at the General Products Division, in San Jose California. 
+We built disk drives. Specifically the 3380. the 3380 was not the first drive. IBM pioneered the 
+technology in the 50s with the 301 RAMAC. The 3380 was the first drive  offering more than a gigabyte. 
+It boasted 2.52 GB, or 1.26 GB per spindle. The unit weighed about 1000 pounds, and you could buy them for about $81,000.
+Note that the current high capacity drives are around 30 TB. If your car, which goes around 400 miles on a tank of gas, would have improved 
+by the same amount, it could drive around the circumference of the earth 190 times. Or about 10 round trips to the moon. 
+What does a disk drive to with errors? 
+There is a primacy around the fact that disks are to store and recall data perfectly every time. 
+When a disk gets a command, say to read a block, it first checks to see if that block is in memory, in cache. 
+If so, it sets up a data phase on the interface, transmits the data to the host, and sends a successful status. 
+If the data is not in cache, the firmware tells the head assembly to move to the proper cylinder, or radial location. While the
+seek is happening, the firmware tells the read hardware to get ready to trigger on the proper target sector. When that happens, 
+data is read into the cache memory. If that works, the data is transmitted to the host. If the data is not read correctly, a 
+complex sequence of retrys, off track reads, channel equalization changes, short writes, and other operations takes place. This 
+is a long process, intended to recover the data prior to transmission. Lots of effort goes in to this. In the past 
+decade, there have been cases where it might be better to transmit data with a few errors, rather than to transmit a block that is 
+delayed by some time. Think about video data. To have a pixel or two in the wrong color would be preferable to glitching the whole 
+video stream by some obvious amount of time. The point here is that data integrity is of utmost importance to disk drive designers.
+
+Slide 4 - gps satellite photo. 
+The Global Positioning System, or GPS is a satellite based technology which can locate a device on the earth to a very accurate degree. 
+It works by having a receiver detecting at least four signals from a constellation of 27 satellites in orbit. Each satellite transmits 
+a signal containing the time that the signal was sent. Each satellite has a veru accurate clock. Each satellite is moving at 8700 
+miles per hour. The clocks have both gravitational and velocity related relativistic corrections made to them. The position of each 
+satellite is monitored by ground based radar to ensure that their positions are always well known.
+Initially, the entire system had a random error programmed into it. It was to defeat potential tracking threats by introducing a known
+error, and moving that error at random times. In 1991, the dither, or 'Selective Availability' was temporarily disabled. 
+This was because US forces deployed under Desert Storm in the Persian Gulf, did not have enough precision GPS receivers. The 
+solution was to buy thousands of commercial GPS units and remove the random errors from the system. The dither was permanently removed 
+in 2000.
+This is an example of managing errors both to reduce threats and to solve operational issues. 
+
+Slide 5 - Stuxnet 
+
+Stuxnet was the most complex example of malware ever developed, by a significant margin. What it accomplished was to degrade the enrichment 
+process of Uranium at the Natanz facility in Iran. The software gained entry into an air-gapped network environment of high speed centrifuges
+controlled by Siemens S7 programmable logic controllers. The software was designed to change the speed of a centrifuge in ways that would 
+cause individual units to fail early. The effect of this was that scientists spent a great deal of time trying to debug and repair
+their equipment. The aggregate enrichment rate fell to below the point of producing weapons grade Uranium 235. One aspect of the operation of Stuxnet 
+is that the presentation of system status data to the monitor system was pre-recorded and looped to the monitor to  cover up the fact that 
+the system was manipulating the centrifuges behind the scenes. This is an example of misprepresenting system status to make it look 
+like the system is running error-free.
+
+Slide 6 - CIA triangle
+Introducing the idea of V - validity, after explaining what CIA stands for and means.
+
+Confidentiality - when sensitive data is delivered without the possibility of exposure to unauthorized parties
+Integrity - when data is delivered with alteration from its original state
+Availability - when data is accessible by parties who have authorization and proper credentials for access. 
+
+With recent advances is AI technology, we have to start thinking about a few new things. 
+
+Slide 7 - Grok.
+
+The xAI agent known as Grok recently started exhibiting very different behavior in its responses to prompts.
+It became pro-Nazi. This brings up troubling questions about how AI agents are responding. AI agents typically use large language models
+which are trained with extreme amounts of internet available data. We've seen several examples of how technologies use 
+and react to error conditions. In the case of AI, there are two central issues. a) Does the training data contain errors? And b) can 
+the agent adopt a 'point of view'. In the case of Grok, it appears that the behavior of the agent changed its apparent point of view 
+almost immediately. This suggests that the point of view of an agent can be quickly manipulated. 
+The existing notion of the CIA triangle might benefit from a new aspect, one of data validity.
+Though there are many complexities at hand, the idea of data validity in some sort of metric, would enable a degree of accountability 
+for AI agents. 
+Could we adopt the 'peer review' model? Could we learn from how accounts of history are documented ? Could there be an established
+corpus of data of known provenance ? 
+There are many examples available where both media outlets and general internet information sources are distributing data that is 
+objectively false. This comes in the form of data meant to promote certain political points of view, or economic results, or even
+hate driven false narratives. In any case, it is important that we try to address this issue. 
+There will come a time when the reasoning capacity of AI systems can rival, or exceed that of our human capacity. 
+Without a reasonable method to validate inputs to these systems, we can expect at best flawed results, and at worst highly
+manipulated outcomes. Either case is not good. 
+
+
+
+
+
